@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#Home">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educations">Educations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiences">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HomePage Section -->
+    <section id="Home" class="main-section">
+        <div class="container">
+            <div class="content">
+                <h1><b>Hello, my name is Valentin Ozeel.</b></h1>
+                <h2>XXXX xxxx XXXX.</h2>
+                <p><b>XXXX xxxx XXXX.</b></p>
+                <p><b>XXXX xxxx XXXX. 👽 </b></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-me" class="about-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Who I am</h2>
+            <div class="text-center">
+                <div class="profile-picture">
+                    <img src="images/me.jpeg" alt="Profile Picture">
+                </div>
+            </div>
+            <div class="text-center mb-5">
+                <p>XXXX xxxx XXXX.</p>
+                <p>XXXX xxxx XXXX.</p>
+                <p>XXXX xxxx XXXX.</p>
+                <p>XXXX xxxx XXXX.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="text-center">
+                <div class="ski-box">
+                    <div class="ski-header" onclick="toggleContent(this)">
+                        <span>Personal Interests & Transferable Skills</span>
+                        <span class="ski-icon">&nbsp; + &nbsp;</span>
+                    </div>
+                    <div class="ski-content">
+                        <p>
+                            <b>Areas of Interest:</b><br>
+                            XXXX xxxx XXXX. | XXXX xxxx XXXX. | XXXX xxxx XXXX. | XXXX xxxx XXXX. | XXXX xxxx XXXX. | XXXX xxxx XXXX.<br><br>
+                            <b>How I Spend My Free Time:</b><br>
+                            XXXX xxxx XXXX.<br><br>
+                            XXXX xxxx XXXX.
+                            <br><button class="article-link" onclick="window.open('https://x.com/Valentin_ozl_', '_blank')"><i>XXXX xxxx XXXX.</i></button><br><br>
+                            <b>Top Resources I Use to Improve My Performance and Productivity:</b><br>
+                            • XXXX xxxx XXXX.<br>
+                            <i>XXXX xxxx XXXX.</i><br>
+                            • XXXX xxxx XXXX.<br>
+                            <i>XXXX xxxx XXXX.</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="text-center mb-5">What my strengths are</h2>
+            <div class="text-center">
+                <p class="skill-description">
+                    XXXX xxxx XXXX.<br><br>
+                    XXXX xxxx XXXX.<br><br>
+                    XXXX xxxx XXXX.<br><br>
+                </p>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="ski-box">
+                            <div class="ski-header" onclick="toggleContent(this)">
+                                <span>Continuous Learning & Adaptability</span>
+                                <span class="ski-icon">+</span>
+                            </div>
+                            <div class="ski-content">
+                                <p>XXXX xxxx XXXX.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="ski-box">
+                            <div class="ski-header" onclick="toggleContent(this)">
+                                <span>Interdisciplinary Thinking & Strategic Foresight</span>
+                                <span class="ski-icon">+</span>
+                            </div>
+                            <div class="ski-content">
+                                <p>XXXX xxxx XXXX.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="ski-box">
+                            <div class="ski-header" onclick="toggleContent(this)">
+                                <span>Empathy & Emotional Intelligence</span>
+                                <span class="ski-icon">+</span>
+                            </div>
+                            <div class="ski-content">
+                                <p>XXXX xxxx XXXX.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educations Section -->
+    <section id="educations" class="educations-section">
+        <div class="container">
+            <h2 class="text-center mb-5">EDUCATIONS</h2>
+            <div class="text-center">
+                <!-- First Project Section -->
+                <div class="row section">
+                    <div class="col-md-12"> <!-- Changed col-md-8 to col-md-12 to span full width -->
+                        <h3 class="section-title">Degrees</h3>
+                        <h4 class="project-title"><b>Research Master's Degree in Infectiology: Microbiology, Virology and Immunoly.</b></h4>
+                        <p class="project-description">
+                            University of Paris-Cité - 13th arrondissement
+                            <br>2012 - 2018
+                            <br> Specialized in Virology and Bioinformatics
+                        </p><br>
+                    </div>
+                </div>
+                
+                <!-- Second Project Section -->
+                <div class="row section">
+                    <div class="col-md-12"> <!-- Changed col-md-8 to col-md-12 to span full width -->
+                        <h3 class="section-title">Online Certifications</h3>
+                        <h4 class="project-title"><b>XXXX xxxx XXXX.</b></h4>
+                        <p class="project-description">
+                            XXXX xxxx XXXX.
+                            <br> XXXX xxxx XXXX.
+                        </p>
+                        <button class="view-concept-btn" onclick="window.open('https://udemy-certificate.s3.amazonaws.com/pdf/UC-5df4e95d-dcf1-4075-a4be-8affc2b27d9d.pdf', '_blank')">Certificate ↗</button>
+                        <p class="project-description">
+                            XXXX xxxx XXXX.
+                            <br>XXXX xxxx XXXX.
+                        </p>
+                        <button class="view-concept-btn" onclick="window.open('https://coursera.org/share/5a8a50c9e41421d036d12c977ef9d8ff', '_blank')">Certificate ↗</button>
+                        <h4 class="project-title"><br><b>XXXX xxxx XXXX.</b></h4>
+                        <p class="project-description">
+                            XXXX xxxx XXXX.
+                            <br>XXXX xxxx XXXX.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Third Project Section -->
+                <div class="row section">
+                    <div class="col-md-12"> <!-- Changed col-md-8 to col-md-12 to span full width -->
+                        <h3 class="section-title">Alternative Educational Contents</h3>
+                        <h4 class="project-title"><b>Books</b></h4>
+                        <p class="project-description">
+                            <b> • XXXX xxxx XXXX. </b>
+                            <br><i>XXXX xxxx XXXX.</i><br>
+                        </p>
+
+                        <h4 class="project-title"><br><b>Podcasts</b></h4>
+                        <p class="project-description">
+                            <b> • XXXX xxxx XXXX. </b>
+                            <br><i>XXXX xxxx XXXX.</i><br>
+                        </p>
+
+                        <h4 class="project-title"><br><b>Others</b></h4>
+                        <p class="project-description">
+                            <b> • XXXX xxxx XXXX. </b>
+                            <br><i>XXXX xxxx XXXX.</i><br><br> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experiences Section -->
+    <section id="experiences" class="experiences-section">
+        <div class="container">
+            <h2 class="text-center mb-5">PROFESSIONAL EXPERIENCES</h2>
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <h5 class="section-title">XXXX xxxx XXXX.</h5>
+                        <h3>XXXX xxxx XXXX.</h3>
+                        <span>XXXX xxxx XXXX.</span>
+                        <div class="content">
+
+                            <p>XXXX xxxx XXXX.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="section-title">R&D</h5>
+                        <h3>PhD </h3>
+                        <span>XXXX xxxx XXXX.</span>
+                        <div class="content">
+                            <p>XXXX xxxx XXXX.
+                            </p>
+                        </div>
+                        <h3>Internships</h3>
+                        <span>From 2016 to 2018</span>
+                        <div class="content">
+
+                            <p>
+                                <b>Master's 2:</b>
+
+                                XXXX xxxx XXXX.
+                                <br><b>Master's 1:</b> XXXX xxxx XXXX.
+
+
+                                <br><br>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+ <!-- Contact Me Section -->
+ <section id="contact" class="contact-section">
+     <div class="container">
+         <h2 class="text-center">Want to know more?</h2>
+         <div class="content">
+             <h3 class="text-center">You can reach out to me here:</h3>
+             <h4 class="text-center">_____________________</h4>
+             <p class="contact-description">
+                 valentin.ozeel.pro@gmail.com
+             </p>
+             <div class="social-icons">
+                 <a href="https://x.com/Valentin_ozl_" target="_blank">
+                     <img src="icons/twitter-x.svg" alt="Icon">
+                 </a>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- Scripts -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script src="js/main.js"></script>
+</body>
+</html>
