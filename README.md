@@ -20,7 +20,7 @@ This project is a personal portfolio website designed to describe who I am as a 
 To view/modify the project locally:
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ValentinOzeel/who_i_am_portfolio.git
    ```
 2. Open `index.html` in your web browser.
 
