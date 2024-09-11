@@ -54,3 +54,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('a.nav-link');
     links.forEach(link => link.addEventListener('click', customSmoothScroll));
 });
+
+// Profile picture hover effect
+document.addEventListener('DOMContentLoaded', function() {
+    const profilePic = document.querySelector('.profile-picture img');
+    const originalSrc = profilePic.src;
+    const hoverSrc = profilePic.getAttribute('data-hover');
+
+    profilePic.addEventListener('mouseover', function() {
+        this.src = hoverSrc;
+    });
+
+    profilePic.addEventListener('mouseout', function() {
+        this.src = originalSrc;
+    });
+});
