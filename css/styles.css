@@ -183,6 +183,10 @@ body {
     font-size: 1.2rem;
 }
 
+@keyframes pulse {
+    0% { color: rgb(186, 151, 255); text-shadow: 0 0 6px rgb(47, 0, 255), 0 0 5px #ffffff, 0 0 5px #000000; } /* Change to your desired color */
+    100% { color: rgba(255, 255, 255, 0.91); text-shadow: 0 0 20px rgb(47, 0, 255), 0 0 20px #ffffff, 0 0 20px #000000; } /* Change to your desired color */
+}
 
 #about-me .ski-box {
     box-shadow: 0 0 10px rgb(0, 0, 0);
@@ -205,7 +209,7 @@ body {
     height: 100px;
     box-sizing: border-box;
     background-color: #0e0026be;
-    color: rgb(186, 151, 255);
+    animation: pulse 2s ease-in-out infinite alternate;
     border-radius: 15px;
     margin-bottom: 5px;
     font-size: 1.3rem;
@@ -317,19 +321,18 @@ body {
 
 
 @keyframes glow3 {
-    0% { text-shadow: 0 0 15px rgb(255, 0, 0), 0 0 7.5px #ffa8a8a1, 0 0 7.5px #000000ca; } /* Change to your desired color */
-    100% { text-shadow: 0 0 15px rgb(255, 0, 0), 0 0 7.5px #ffa8a8a1, 0 0 7.5px #000000ca; } /* Change to your desired color */
+    0% { text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 7.5px #ffa8a8a1, 0 0 7.5px #000000ca; } 
+    100% { text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 7.5px #ffa8a8a1, 0 0 7.5px #000000ca; } 
 }
 
 #skills h3 {
-    font-size: 1.3rem;
-    color: rgb(252, 32, 32);
+    font-size: 1.25rem;
+    color: var(--text-color);
     animation: glow3 2s ease-in-out infinite alternate;
     display: inline;
     text-align: center;
+    font-weight: bold; 
 }
-
-
 
 
 
@@ -344,6 +347,10 @@ body {
     text-align: center;
 }
 
+@keyframes pulse2 {
+    0% { color: rgb(255, 51, 51); text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 5px #ffa8a8a1, 0 0 5px #000000ca;  } /* Change to your desired color */
+    100% { color: rgb(255, 207, 207); text-shadow: 0 0 20px rgb(255, 0, 0), 0 0 20px #ffffff, 0 0 20px #000000; } /* Change to your desired color */
+}
 
 .ski-header {
     display: flex;
@@ -356,14 +363,11 @@ body {
     box-sizing: border-box;
     background-color: #1a0404be;
     box-shadow: 0 0 15px #ff1d1d;
-    color: #ed8989;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    font-size: 1.2rem;
+    animation: pulse2 2s ease-in-out infinite alternate;
+    font-size: 1.3rem;
     font-weight: bold; 
     border-radius: 15px;
     margin-bottom: 5px;
-    font-size: 1.2rem;
 }
 
 .ski-header:hover {
@@ -379,43 +383,47 @@ body {
 }
 
 
-.ski-content {
-    font-size: 1.2rem;
+
+
+
+
+
+
+#skills .ski-content {
+    font-size: 1.1rem;
     display: none;
     margin-top: 10px;
     padding: 15px;
-    color: #fdcaca;
+    color: rgba(248, 224, 224, 0.905);
     line-height: 1.6;
     overflow: hidden;
     text-align: left;
 }
 
-
-.ski-content h1 {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.905);
-    text-shadow: 0 0 20px rgba(197, 170, 255, 0.913);
-    margin-bottom: 15px;
-    text-align: center;
-}
-
 @keyframes glow4 {
-    0% { text-shadow: 0 0 15px rgb(255, 0, 0), 0 0 7.5px #ffa8a8a1, 0 0 7.5px #000000ca; } /* Change to your desired color */
-    100% { text-shadow: 0 0 15px rgb(255, 0, 0), 0 0 7.5px #ffa8a8a1, 0 0 7.5px #000000ca; } /* Change to your desired color */
+    0% { text-shadow: 0 0 15px rgb(255, 0, 0), 0 0 7.5px #ffa8a8a1, 0 0 7.5px #000000ca; } 
+    100% { text-shadow: 0 0 15px rgb(255, 0, 0), 0 0 7.5px #ffa8a8a1, 0 0 7.5px #000000ca; } 
 }
 
-.ski-content h2 {
-    font-size: 1.1rem;
-    color: rgba(222, 195, 255, 0.905);
+#skills .ski-content h1 {
+    font-size: 1.15rem;
+    animation: glow4 2s ease-in-out infinite alternate;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    display: inline;
+    font-weight: bold;
+}
+
+#skills .ski-content h2 {
+    font-size: 1.0rem;
+    color: rgb(254, 32, 32);
     animation: glow4 2s ease-in-out infinite alternate;
     margin-bottom: 15px;
-    font-weight: bold;
     display: inline;
     text-align: center;
+    text-transform: none;
+    font-style: none;
 }
-
-
-
 
 
 
@@ -445,23 +453,63 @@ body {
     border-radius: 15px;
 }
 
+
 #educations .section-title {
     color: rgb(192, 171, 255);
     font-size: 2rem;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
     z-index: 2;
     position: relative;
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
+
 #educations .project-title {
-    color: rgb(113, 92, 179);
+    color: rgb(161, 132, 255);
+    animation: glow 2s ease-in-out infinite alternate;
     font-size: 1.5rem;
     margin-bottom: 15px;
     z-index: 2;
     position: relative;
+
 }
+
+
+@keyframes pulse3 {
+    0% { 
+        transform: scale(1);
+        filter: invert(100%) drop-shadow(0 0 10px rgb(161, 121, 248));
+    }
+    50% { 
+        transform: scale(1.10);
+        filter: invert(100%) drop-shadow(0 0 20px rgb(89, 0, 255));
+    }
+    100% { 
+        transform: scale(1);
+        filter: invert(100%) drop-shadow(0 0 10px rgb(161, 121, 248));
+    }
+}
+#educations .social-icons img {
+    width: 100px;
+    height: auto;
+    margin: 0 3px;
+    animation: pulse3 3s ease-in-out infinite alternate;
+}
+
+
+#educations h1 {
+    display: inline;
+    color: rgb(161, 132, 255);
+    animation: glow 2s ease-in-out infinite alternate;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    z-index: 2;
+    position: relative;
+    font-weight: bold;
+}
+
+
 
 #educations .project-description {
     color: var(--text-color);
@@ -492,6 +540,10 @@ body {
     background-color: #0E2018;
     color: rgb(192, 171, 255);
 }
+
+
+
+
 
 /* Experiences Section Styles */
 
