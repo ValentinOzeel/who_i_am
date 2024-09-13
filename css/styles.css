@@ -522,8 +522,8 @@ body {
 
 #educations .view-concept-btn {
     background-color: transparent;
-    color: #5d888c;
-    border: 1px solid #164a33;
+    color: #79bcc2;
+    border: 1px solid #28694c;
     padding: 6px 12px;
     font-size: 0.95rem;
     font-weight: normal;
@@ -564,13 +564,39 @@ body {
     text-shadow: 0 0 15px rgba(255, 0, 0, 0.913);
 }
 
+.experiences-section h3 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px rgb(255, 0, 0);
+    color: #ff1f1f;
+}
+
 .experiences-section h5 {
     font-size: 2rem;
     margin-bottom: 10px;
     font-family: Arial, sans-serif;
     font-weight: bold;
     text-shadow: 0px 0px 55px rgb(255, 0, 0);
-    color: #b11f1f;
+    color: #ffffff;
+}
+
+
+.experiences-section h6 {
+    font-size: 1.3rem;
+    display: inline;
+    font-family: Arial, sans-serif;
+    animation: glow4 2s ease-in-out infinite alternate;
+    color: rgb(254, 32, 32);
+}
+
+.experiences-section h7 {
+    font-size: 1.3rem;
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-weight: 500; /* Between light and medium bold */
+    color: rgb(255, 255, 255);
 }
 
 .timeline {
@@ -592,25 +618,22 @@ body {
 .timeline ul li {
     padding: 20px 20px;
     position: relative;
-    cursor: pointer;
+
     transition: 0.5s;
 }
 
-.timeline ul li span {
-    display: inline-block;
-    background-color: #2a0606;
-    border-radius: 25px;
-    padding: 2px 5px;
-    font-size: 1.1rem;
-    font-style: italic;
-    text-align: center;
-    box-shadow: 0 0 5px rgb(255, 0, 0); /* Added shadow */
-}
+
 
 .timeline ul li .content h3 {
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 1.2rem;
-    padding-top: 5px;
+}
+
+.timeline ul li .content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+
+    color: var(--text-color);
 }
 
 .timeline ul li .content p {
@@ -639,21 +662,39 @@ body {
     box-shadow: 0px 0px 10px 2px #ff0000;
 }
 
-.article-link {
-    background-color: transparent;
-    color: #ffffff;
-    border: none;
-    padding: 0;
-    font-size: 1rem;
-    font-weight: normal;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: color 0.3s;
+
+
+
+
+/* Styles for ski-box within timeline */
+.timeline-ski-box {
+    position: relative;
+    z-index: 1;
+    width: 70%;
 }
 
-.article-link:hover {
-    color: #c91616;
+.timeline-ski-box .ski-content {
+    display: none;
+    background-color: #180101;
+    border-radius: 5px;
+    margin-top: 10px;
 }
+
+.timeline-ski-box .ski-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #180101;
+    border-radius: 15px;
+    height: 30px; /* Modified height */
+}
+
+
+
+
+
+
+
+
 
 /* Contact Section Styles */
 
@@ -709,19 +750,18 @@ body {
 }
 
 .contact-section .social-icons img {
-    width: 30px;
+    width: 50px;
     height: auto;
     margin: 0 10px;
     filter: invert(10%) sepia(20%) saturate(700%) hue-rotate(95deg) brightness(70%) contrast(120%);
     transition: filter 0.3s ease, transform 0.3s ease;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
 
 .contact-section .social-icons img:hover {
-    filter: drop-shadow(0 0 10px rgb(255, 0, 0)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.7));
+    filter: drop-shadow(0 0 20px rgb(255, 0, 0)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.7));
     transform: scale(1.3);
 }
-
 
 
 /* Responsive Styles */
