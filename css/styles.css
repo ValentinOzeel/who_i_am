@@ -670,7 +670,7 @@ body {
 .timeline-ski-box {
     position: relative;
     z-index: 1;
-    width: 70%;
+    width: 27%;
 }
 
 .timeline-ski-box .ski-content {
@@ -678,6 +678,9 @@ body {
     background-color: #180101;
     border-radius: 5px;
     margin-top: 10px;
+    width: 250%;
+    margin-left: -73%;
+    text-align: justify;
 }
 
 .timeline-ski-box .ski-header {

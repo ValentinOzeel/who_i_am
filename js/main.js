@@ -1,14 +1,13 @@
 // Toggle content function
-function toggleContent(header) {
-    const content = header.nextElementSibling;
-    const icon = header.querySelector('.ski-icon');
-    
-    if (content.style.display === "block") {
-        content.style.display = "none";
-        icon.textContent = "+";
-    } else {
+function toggleContent(element) {
+    const content = element.nextElementSibling;
+    const icon = element.querySelector('.ski-icon');
+    if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
         icon.textContent = "-";
+    } else {
+        content.style.display = "none";
+        icon.textContent = "+";
     }
 }
 
