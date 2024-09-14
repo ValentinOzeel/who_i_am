@@ -50,6 +50,23 @@ body {
     text-shadow: 0 0 25px var(--accent-color-white);
 }
 
+/* Toggle Button Styles */
+.navbar-toggler {
+    border-color: none;
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove default background image */
+    color: var(--accent-color-white); /* Set color of icon */
+}
+
+.navbar-toggler-icon::before {
+    content: '\2630'; 
+    font-size: 1.5rem; 
+    color: var(--accent-color-white); 
+    text-shadow: 0 0 25px var(--accent-color-white);
+}
+
 /* Section Styles */
 .section {
     margin: 50px 0;
@@ -670,7 +687,7 @@ body {
 .timeline-ski-box {
     position: relative;
     z-index: 1;
-    width: 27%;
+    width: 35%;
 }
 
 .timeline-ski-box .ski-content {
@@ -678,8 +695,8 @@ body {
     background-color: #180101;
     border-radius: 5px;
     margin-top: 10px;
-    width: 250%;
-    margin-left: -73%;
+    width: 280%;
+    margin-left: -90%;
     text-align: justify;
 }
 
@@ -688,7 +705,7 @@ body {
     padding: 10px;
     background-color: #180101;
     border-radius: 15px;
-    height: 30px; /* Modified height */
+    height: 80px; /* Modified height */
 }
 
 
