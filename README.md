@@ -24,3 +24,30 @@ To view/modify the project locally:
    ```
 2. Open `index.html` in your web browser.
 
+## Deployment
+
+You can use GitHub Pages to deploy the website:
+
+1. Push your changes to the GitHub repository.
+2. Go to your repository settings on GitHub.
+3. Navigate to the "Pages" section.
+4. Select the branch you want to deploy (usually `main` or `master`).
+5. Choose the root folder as the source.
+6. Click "Save" to deploy your website.
+
+## Continuous Deployment with GitHub Actions
+
+This project uses GitHub Actions to automate the redeployment of the website when changes are committed to the repository. The workflow configuration can be found in the [`.github/workflows/static.yml`](../../blob/main/.github/workflows/static.yml) file.
+
+The workflow is set up to:
+
+1. Trigger on pushes to the main branch.
+2. Deploy the contents of the repository to GitHub Pages.
+
+To modify the deployment process:
+
+1. Navigate to the [`.github/workflows/static.yml`](../../blob/main/.github/workflows/static.yml) file in the repository.
+2. Edit the file to adjust the deployment settings as needed.
+3. Commit and push your changes.
+
+With this setup, every time you push changes to your main branch, GitHub Actions will automatically redeploy your website, ensuring that your portfolio is always up-to-date with your latest changes.
